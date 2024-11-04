@@ -1,0 +1,230 @@
+/* Reseta o layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    background: url('/images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    height: 100vh;
+    padding: 80px 20px;
+}
+
+/* Formularios */
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 55px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    width: 48%;
+    max-width: 450px;
+    text-align: center;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 40px; 
+}
+
+/* titulo */
+h1 {
+    text-align: center;
+    color: #201c1c;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilização dos formulários */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+input {
+    border: 2px solid #ccc;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.4);
+}
+
+button {
+    background-color: #ffcc00;
+    color: #333;
+    padding: 12px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #ffdf80;
+}
+
+.pokemon-cards-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px; 
+    width: 100%;
+    margin-top: 30px;
+}
+
+.pokemon-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 250px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.pokemon-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.pokemon-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 5px solid #ffcc00;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.pokemon-card img:hover {
+    transform: scale(1.05);
+}
+
+.pokemon-card h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.pokemon-card .details {
+    text-align: left;
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 15px;
+}
+
+.pokemon-card .details p {
+    margin: 5px 0;
+    color: #333;
+}
+
+.pokemon-card .details p strong {
+    color: #ffcc00;
+}
+
+@media(max-width: 250px) {
+    .input-group {
+        flex-direction: column;
+    }
+
+    .input-group input {
+        width: 100%;
+    }
+}
+
+#altura, #peso {
+    width: 48%;
+}
+
+.input-group {
+    flex-direction: column;
+    width: 100%;
+}
+
+.file-upload {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+}
+
+.file-upload input[type="file"] {
+    display: none;
+}
+
+.file-upload-label {
+    background-color: #ffcc00;
+    color: rgb(0, 0, 0);
+    padding: 12px 55px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.file-upload-label:hover {
+    background-color: #ffdf80;
+}
+
+.file-upload-text {
+    margin-left: 15px;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.image img{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+
+    top: -40px;
+    left: calc(50% - 40px);
+
+    border-radius: 50%;
+    border: 3px solid #000;
+}
+
+.form-wrapper {
+    display: flex;
+    gap: 15px;
+    justify-content: stretch;
+    flex-wrap: wrap;
+}
+
+.treinador-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 250px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
