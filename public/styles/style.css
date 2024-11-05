@@ -23,12 +23,9 @@ body {
     padding: 55px;
     border-radius: 16px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-    width: 48%;
     max-width: 450px;
     text-align: center;
-    position: relative;
-    margin-top: 20px;
-    margin-bottom: 40px; 
+
 }
 
 /* titulo */
@@ -201,7 +198,7 @@ button:hover {
     width: 80px;
     height: 80px;
 
-    top: -40px;
+    top: 40px;
     left: calc(50% - 40px);
 
     border-radius: 50%;
@@ -210,8 +207,8 @@ button:hover {
 
 .form-wrapper {
     display: flex;
-    gap: 15px;
-    justify-content: stretch;
+    gap: 20px;
+    justify-content: center;
     flex-wrap: wrap;
 }
 

@@ -6,6 +6,12 @@ const treinadorRoutes = require('./routes/treinadorRoutes');
 
 const app = express();
 
+app.use(express.static(path.join(__dirname, 'public')));
+
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'inicial.html'));
+});
+
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
         cb(null, './public/uploads');  
