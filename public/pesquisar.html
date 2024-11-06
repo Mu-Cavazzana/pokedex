@@ -9,7 +9,8 @@
 <body>
     <div class="container">
         <h1>Pesquisar Pokémon</h1>
-        <input type="text" id="pokemonName" placeholder="Digite o nome do Pokémon">
+        <input type="text" id="pokemonName" placeholder="Digite o nome do Pokémon" oninput="autocompletePokemon()">
+        <ul id="suggestions" class="suggestions"></ul>
         <button onclick="searchPokemon()">Buscar</button>
 
         <div id="pokemonResult" class="pokemon-result"></div>

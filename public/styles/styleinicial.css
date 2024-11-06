@@ -1,4 +1,4 @@
-/* Cabeçalho */
+
 header {
     text-align: center;
     margin-bottom: 40px;
@@ -26,7 +26,6 @@ body {
     padding: 80px 20px;
 }
 
-/* Container da página inicial */
 .home-container {
     display: flex;
     justify-content: center;
@@ -35,7 +34,7 @@ body {
     padding: 20px;
 }
 
-/* Estilos para os cards */
+
 .card {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 55px;
@@ -68,7 +67,6 @@ body {
     margin-bottom: 20px;
 }
 
-/* Estilo para os botões */
 .button {
     display: inline-block;
     background-color: #ffcc00;
@@ -85,7 +83,6 @@ body {
     background-color: #ffdf80;
 }
 
-/* Rodapé */
 footer {
     text-align: center;
     margin-top: 50px;

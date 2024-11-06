@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Lista de Pokémon</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Pokémon</h1>
+        <div id="pokemonList" class="pokemon-list"></div>
+        
+        <div class="pagination">
+            <button onclick="previousPage()" id="prevButton" disabled>Anterior</button>
+            <button onclick="nextPage()" id="nextButton">Próximo</button>
+        </div>
+    </div>
+
+    <script src="./scripts/listaPokemon.js"></script>
+</body>
+</html>
