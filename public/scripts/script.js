@@ -38,10 +38,10 @@ document.getElementById('treinadorForm').addEventListener('submit', async functi
     const pokemonsEquipe = formData.get('pokemonsEquipe');
     const foto = formData.get('foto'); 
 
-    const cardContainer = document.getElementById('treinadorCardContainer'); // aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa arrumei senhor 
+    const cardContainer = document.getElementById('treinadorCardContainer'); // aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa arrumei senhor // ok não arrumei
     cardContainer.innerHTML = `
         <div class="pokemon-card">
-            <img src="${URL.createObjectURL(foto)}" alt="${nome}">  <!-- Carregando a imagem -->
+
             <h5>Treinador(a)</h5>
             <h2>${nome}</h2>
             <div class="details">

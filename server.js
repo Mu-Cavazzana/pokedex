@@ -46,10 +46,10 @@ app.post('/pokemon', upload.single('imagem'), (req, res) => {
     });
 });
 
-app.post('/treinador', upload.single('imagem'), (req, res) => {
+app.post('/treinador', upload.single('foto'), (req, res) => {
     
     const { nome, equipe, altura, peso, pokemonsEquipe } = req.body;
-    const imagemPath = req.file.path;  
+    const fotoPath = req.file.path;
 
     res.send({
         mensagem: "Treinador criado com sucesso!",
@@ -59,7 +59,7 @@ app.post('/treinador', upload.single('imagem'), (req, res) => {
             altura,
             peso,
             pokemonsEquipe,
-            imagem: imagemPath
+            foto: fotoPath
         }
     });
 });

@@ -225,3 +225,45 @@ button:hover {
     margin: 0 auto;
     margin-bottom: 20px;
 }
+
+.pokemon-result {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pokemon-result h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.pokemon-result img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 15px;
+}
+
+.pokemon-result p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+#autocomplete-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    max-height: 200px;
+    overflow-y: auto;
+    position: absolute;
+    width: 80%;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+#autocomplete-list li {
+    padding: 8px;
+    cursor: pointer;
+}
+#autocomplete-list li:hover {
+    background-color: #ddd;
+}
