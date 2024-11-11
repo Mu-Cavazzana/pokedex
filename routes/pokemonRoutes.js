@@ -16,6 +16,6 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage: storage });
 
-router.post('/pokemon', upload.single('imagem'), criarPokemon);
+router.post('/cadastrar', upload.single('imagem'), criarPokemon);
 
 module.exports = router;

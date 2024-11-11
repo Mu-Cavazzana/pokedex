@@ -1,4 +1,4 @@
-class Treinador {
+/*class Treinador {
     constructor(nome, equipe, altura, peso, pokemonsEquipe, foto) {
         this.nome = nome;
         this.equipe = equipe;
@@ -15,3 +15,42 @@ class Treinador {
 
 module.exports = Treinador;
 
+*/
+
+const Sequelize = require('sequelize');
+const database = require('../db');
+
+const Treinador = database.define('treinador', {
+    id: {
+        type: Sequelize.INTEGER,
+        autoIncrement: true,
+        allowNull: false,
+        primaryKey: true
+    },
+    nome: {
+        type: Sequelize.STRING,
+        allowNull: false
+    },
+    equipe: {
+        type: Sequelize.STRING,
+        allowNull: false
+    },
+    altura: {
+        type: Sequelize.FLOAT,
+        allowNull: false
+    },
+    peso: {
+        type: Sequelize.FLOAT,
+        allowNull: false
+    },
+    pokemonsEquipe: {
+        type: Sequelize.STRING,
+        allowNull: true
+    },
+    foto: {
+        type: Sequelize.STRING,
+        allowNull: true
+    }
+});
+
+module.exports = Treinador;

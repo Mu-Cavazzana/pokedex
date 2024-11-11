@@ -7,6 +7,14 @@ const treinadorRoutes = require('./routes/treinadorRoutes');
 const app = express();
 
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.json());
+
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'inicial.html'));
+});
+
+app.use('/pokemon', pokemonRoutes);
+app.use('/treinador', treinadorRoutes);
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'inicial.html'));
@@ -25,7 +33,6 @@ const storage = multer.diskStorage({
 const upload = multer({ storage: storage });
 
 app.use(express.static(path.join(__dirname, 'public')));
-
 app.use(express.json());
 
 app.post('/pokemon', upload.single('imagem'), (req, res) => {
