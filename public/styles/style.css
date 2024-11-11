@@ -56,7 +56,7 @@ input:focus {
     box-shadow: 0 0 8px rgba(0, 123, 255, 0.4);
 }
 
-button {
+.button {
     background-color: #ffcc00;
     color: #333;
     padding: 12px;
@@ -68,7 +68,7 @@ button {
     font-weight: bold;
 }
 
-button:hover {
+.button:hover {
     background-color: #ffdf80;
 }
 
